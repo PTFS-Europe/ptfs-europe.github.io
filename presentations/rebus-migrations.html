@@ -13,11 +13,11 @@
 	<link href="lib/css/zenburn.css" rel="stylesheet"><!-- Printing and PDF exports -->
 
 	<script>
-	           var link = document.createElement( 'link' );
-	           link.rel = 'stylesheet';
-	           link.type = 'text/css';
-	           link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-	           document.getElementsByTagName( 'head' )[0].appendChild( link );
+	              var link = document.createElement( 'link' );
+	              link.rel = 'stylesheet';
+	              link.type = 'text/css';
+	              link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	              document.getElementsByTagName( 'head' )[0].appendChild( link );
 	</script><!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
         <![endif]-->
@@ -36,27 +36,41 @@
 				<h3>One script to bind them</h3>
 			</section><!-- Example of nested vertical slides -->
 			<section>
-				<section>
-					<h2>Three is Company</h2>
-					<p>We gathered the team</p>
-					<ul>
-						<li class="fragment grow">Janet</li>
-						<li class="fragment grow">Fiona</li>
-						<li class="fragment grow">Martin</li>
-					</ul>
-				</section>
-				<section>
-					<h2>A Conspiracy Unmasked</h2>
-					<p>Lining up our ducks</p>
-				</section>
-				<section>
-					<h2>Many Meetings</h2>
-					<p>Contacting the Customers</p>
-				</section>
-				<section>
-					<h2>A Journey in the Dark</h2>
-					<p>Feedback, lots of feedback</p>
-				</section>
+				<h2>Three is Company</h2>
+				<h3>We gathered the team</h3>
+				<ul>
+					<li>Janet</li>
+					<li>Fiona</li>
+					<li>Martin</li>
+				</ul>
+			</section>
+			<section>
+				<h2>A Conspiracy Unmasked</h2>
+				<h3>Lining up our ducks</h3>
+				<ul>
+					<li>We came up with a schedule</li>
+					<li>We ensured staff were available</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Many Meetings</h2>
+				<h3>Contacting the Customers</h3>
+				<ul>
+					<li>Schedule got 'refined'</li>
+					<li>Schedule got 'rewritten'</li>
+				</ul>
+			</section>
+			<section>
+				<h2>A Journey in the Dark</h2>
+				<h3>Feedback, lots of feedback</h3>
+				<ul>
+					<li>At first it was very slow</li>
+					<li>But... then we got too much all at once</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Helm's Deep</h2>
+				<h3>Feature creep after feedback</h3>
 			</section>
 		</div>
 	</div>
@@ -66,26 +80,26 @@
 	</script> 
 	<script>
 
-	           // Full list of configuration options available at:
-	           // https://github.com/hakimel/reveal.js#configuration
-	           Reveal.initialize({
-	               controls: true,
-	               progress: true,
-	               history: true,
-	               center: true,
+	              // Full list of configuration options available at:
+	              // https://github.com/hakimel/reveal.js#configuration
+	              Reveal.initialize({
+	                  controls: true,
+	                  progress: true,
+	                  history: true,
+	                  center: true,
 
-	               transition: 'slide', // none/fade/slide/convex/concave/zoom
+	                  transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-	               // Optional reveal.js plugins
-	               dependencies: [
-	                   { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-	                   { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	                   { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	                   { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-	                   { src: 'plugin/zoom-js/zoom.js', async: true },
-	                   { src: 'plugin/notes/notes.js', async: true }
-	               ]
-	           });
+	                  // Optional reveal.js plugins
+	                  dependencies: [
+	                      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	                      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	                      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	                      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+	                      { src: 'plugin/zoom-js/zoom.js', async: true },
+	                      { src: 'plugin/notes/notes.js', async: true }
+	                  ]
+	              });
 
 	</script>
 </body>
