@@ -13,7 +13,18 @@
   <link href="css/reveal.css" rel="stylesheet">
   <link href="css/theme/solarized.css" id="theme" rel="stylesheet"><!-- Code syntax highlighting -->
   <link href="lib/css/zenburn.css" rel="stylesheet"><!-- Printing and PDF exports -->
-
+<link rel="stylesheet" href="css/fullscreen-img.css">
+    <script>
+      Reveal.initialize({
+        ...
+        dependencies: [
+          // Syntax highlight for <code> elements
+          { src: 'lib/js/fullscreen-img.js' },
+          ...
+        ]
+        ...
+      });
+    </script>
   <script>
                   var link = document.createElement( 'link' );
                   link.rel = 'stylesheet';
@@ -28,6 +39,8 @@
 <body>
   <div class="reveal">
     <div class="slides">
+       <section fullscreen-img="img/minions.png" fullscreen-size="contain">
+  </section>
  <section>        <h1>rebus:list 1.x to rebus:list 2.x</h1>
         <h3>Migration Process</h3>
         <p><small>Presented by <a href="http://rebustlist.com">Martin Renvoize</a> & <a href="http://rebuslist.com">Andrew Isherwood</a></small>
