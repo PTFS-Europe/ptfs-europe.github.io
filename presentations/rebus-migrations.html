@@ -1,149 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Migration Process</title>
+	<meta content="An overview on the rebus:list 1.x series to 2.x series migration process" name="description">
+	<meta content="Martin Renvoize" name="author">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport">
+	<link href="css/reveal.css" rel="stylesheet">
+	<link href="css/theme/solarized.css" id="theme" rel="stylesheet"><!-- Code syntax highlighting -->
+	<link href="lib/css/zenburn.css" rel="stylesheet"><!-- Printing and PDF exports -->
 
-	<head>
-		<meta charset="utf-8">
-
-		<title>Migration Process</title>
-
-		<meta name="description" content="An overview on the rebus:list 1.x series to 2.x series migration process">
-		<meta name="author" content="Martin Renvoize">
-
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+	<script>
+	           var link = document.createElement( 'link' );
+	           link.rel = 'stylesheet';
+	           link.type = 'text/css';
+	           link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	           document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script><!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+<body>
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>rebus:list 1.x to rebus:list 2.x</h1>
+				<h3>Migration Process</h3>
+				<p><small>Presented by <a href="http://rebustlist.com">Martin Renvoize</a></small></p>
+			</section>
+			<section>
+				<h2>One Script To Rule Them All</h2>
+				<h3>One script to bind them</h3>
+			</section><!-- Example of nested vertical slides -->
+			<section>
 				<section>
-					<h1>rebus:list 1.x to rebus:list 2.x</h1>
-					<h3>Migration Process</h3>
-					<p>
-						<small>Presented by <a href="http://rebustlist.com">Martin Renvoize</a></small>
-					</p>
+					<h2>Three is Company</h2>
+					<p>We gathered the team</p>
+					<ul>
+						<li class="fragment grow">Janet</li>
+						<li class="fragment grow">Fiona</li>
+						<li class="fragment grow">Martin</li>
+					</ul>
 				</section>
-
 				<section>
-					<h2>One Script To Rule Them All</h2>
-					<h3>One script to bind them.</h3>
+					<h2>A Conspiracy Unmasked</h2>
+					<p>Lining up our ducks</p>
 				</section>
-
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Three is Company</h2>
-						<p>We gathered a team</p>
-                        <ul>
-                            <li class="fragment grow">Janet</li>
-                            <li class="fragment grow">Fiona</li>
-                            <li class="fragment grow">Martin</li>
-                        </ul>
-					</section>
-					<section>
-						<h2>Customer First</h2>
-                        <p>We want to put the customer in the driving seat!</p>
-                        <ul>
-                            <li>Feedback is key</li>
-                            <ul>
-                                <li>Feature requests</li>
-                                <li>Bug reports</li>
-                            </ul>
-                            <li>Continual involvement</li>
-                        </ul>
-					</section>
-					<section>
-						<h2>A Journey in the Dark</h2>
-						<p>Feedback, lots of feedback</p>
-        			</section>
-                    <section>
-                        <h2>Development Cycle</h2>
-                        <p>Once the specification is narrowed down, we'll assign one of the team to work on it</p>
-                        <p>You should be able to track our progress</p>
-                    </section>
-                    <section>
-                        <h2>Testing Cycle</h2>
-                        <p>We need your help!</p>
-                    </section>
-                    <section>
-                        <h2>Code Review/Quality Assurance</h2>
-                        <p>A second developer will then review the code</p>
-                    </section>
-                    <section>
-                        <h2>Production Cycle</h2>
-                        <p>Finally we will roll the feature into production</p>
-                    </section>
-                    <section>
-                        <h2>Final Review</h2>
-                        <p>Ends with the customer</p>
-                    </section>
+					<h2>Many Meetings</h2>
+					<p>Contacting the Customers</p>
 				</section>
-
 				<section>
-					<h2>Dogfooding</h2>
-					<p>
-						We are the customer
-					</p>
+					<h2>A Journey in the Dark</h2>
+					<p>Feedback, lots of feedback</p>
 				</section>
-
-                <section>
-                    <h2>Any Questions?</h2>
-                </section>
-			</div>
-
+			</section>
 		</div>
+	</div>
+	<script src="lib/js/head.min.js">
+	</script> 
+	<script src="js/reveal.js">
+	</script> 
+	<script>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	           // Full list of configuration options available at:
+	           // https://github.com/hakimel/reveal.js#configuration
+	           Reveal.initialize({
+	               controls: true,
+	               progress: true,
+	               history: true,
+	               center: true,
 
-		<script>
+	               transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+	               // Optional reveal.js plugins
+	               dependencies: [
+	                   { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	                   { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	                   { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	                   { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+	                   { src: 'plugin/zoom-js/zoom.js', async: true },
+	                   { src: 'plugin/notes/notes.js', async: true }
+	               ]
+	           });
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
+	</script>
+</body>
 </html>
