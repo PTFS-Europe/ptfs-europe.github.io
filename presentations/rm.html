@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>RM: Release Manager</title>
+
+    <meta name="description" content="Becoming the Koha RM!">
+    <meta name="author" content="Martin Renvoize">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Release Management</h1>
+                <p>
+                    <small>Delivered by <a href="http://www.ptfs-europe.com/about/company/">Martin Renvoize</a></small>
+                </p>
+            </section>
+
+            <!-- What -->
+            <section>
+                <section>
+                    <h2>What is a release manager?</h2>
+                    <ul>
+                        <li class="fragment fade-in-then-semi-out" >"The buck stops here"</li>
+                        <li class="fragment fade-in-then-semi-out">"The last line of defence"</li>
+                        <li class="fragment fade-in-then-semi-out">"A team leader"</li>
+                        <li class="fragment fade-in-then-semi-out">"Pusher of things"</li>
+                        <li class="fragment fade-in-then-semi-out">"Font of all knowledge"</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- How -->
+            <section>
+                <section>
+                    <h2>How do you become the release manager?</h2>
+                </section>
+                <section>
+                    <h3>Company proposal</h3>
+                    <ul>
+                        <li>Proposed to Janet and Jonathan in April</li>
+                        <li>Discussed some areas we would like to focus on</li>
+                        <li>Discussed impact</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                        <h4>Detriments</h4>
+                        <ul>
+                            <li>Significant commitment (12 Months)</li>
+                            <li>Daily time commitments</li>
+                        </ul>
+                </section>
+                <section>
+                        <h4>Benefits</h4>
+                        <ul>
+                            <li>Raises company profile</li>
+                            <li>Long term community respect</li>
+                            <li>Puts us in the driving seat</li>
+                            <li>Gives us the ability, within reason, to fasttrack some patches</li>
+                        </ul>
+                </section>
+                <section>
+                    <h3>Community proposal</h3>
+                    <ul>
+                        <li>Stability, Quality and Maintainability</li>
+                        <li>Development Process and Culture</li>
+                        <li>Focus areas:</li>
+                        <ul>
+                            <li>Acquisitions</li>
+                            <li>RESTful API</li>
+                            <li>Accounts</li>
+                            <li>ManaKB and Plugins</li>
+                        </ul>
+                        <li><a href="https://wiki.koha-community.org/wiki/MRenvoize/RM">More details in my public proposal</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Vote</h1>
+                    <h2>They said yes ☺</h2>
+                </section>
+            </section>
+
+            <!-- Commitments -->
+            <section>
+                <section>
+                    <h2>The process</h2>
+                </section>
+                <section>
+                    <h3>Daily workflow</h3>
+                    <ul>
+                        <li>Upto 2 hours daily before the morning call working through the PQA queue</li>
+                        <ul>
+                            <li>Assess the security queue</li>
+                            <li>Assess, test and push bugs</li>
+                            <li>Assess, test and push enhancements</li>
+                            <li>Assess, test and push new features</li>
+                            <li>Notify RMaints of PQA bugs that only affect their branches</li>
+                            <li>Monitor Jenkins build for errors</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Other commitments</h3>
+                    <ul>
+                        <li>Bug shepherding</li>
+                        <li>Liase frequently with QA team</li>
+                        <li>Chairing community meetings</li>
+                        <li>Reaching out to parties to encourage collaboration</li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+         // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(
+        {
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+            {
+                src: 'lib/js/classList.js',
+                condition: function()
+                {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js',
+                condition: function()
+                {
+                    return !!document.querySelector(
+                        '[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js',
+                condition: function()
+                {
+                    return !!document.querySelector(
+                        '[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function()
+                {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
+        });
+    </script>
+
+</body>
+
+</html>
